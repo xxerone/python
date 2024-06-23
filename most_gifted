@@ -1,0 +1,40 @@
+#https://school.programmers.co.kr/learn/courses/30/lessons/258712
+A_gift_in = 0 #A 받은 선물
+B_gift_in = 0 #B 받은 선물
+
+A_gift_out = 0 #A 준 선물
+B_gift_out = 0 #B 준 선물
+
+A_gift_num = A_gift_out - A_gift_in
+B_gift_num = B_gift_out - B_gift_in
+
+more_gift = "A" #비교
+
+def gift(def_A_gift_out, def_B_gift_out):
+    if (def_A_gift_out != 0 and def_B_gift_out != 0):
+        def_more_gift = def_A_gift_out > def_B_gift_out #A가 많이 주면 True
+        if (more_gift):
+            def_A_gift_in += 1
+        else:
+            def_B_gift_in += 1
+    
+    if ((def_A_gift_out == 0 and def_B_gift_out == 0) or def_A_gift_out == def_B_gift_out):
+        if (A_gift_num != B_gift_num):
+            def_more_gift_num = A_gift_num > B_gift_num #A가 선물지수가 크면 True
+            if(def_more_gift_num):
+                def_B_gift_in += 1
+            else:
+                def_A_gift_in += 1
+        else:
+            print("선물을 주고받지 않음")
+
+
+gift = dict()
+gifts = list(gift.key())
+friends = list(gift.value())
+
+n = int(input(몇 번 반복하시겠습니까? : ))
+print(n)
+for i in range(n):
+    a = input(친구의 이름을 입력하시오. : )
+    gift()
