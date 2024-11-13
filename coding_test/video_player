@@ -1,8 +1,10 @@
 def solution(video_len, pos, op_start, op_end, commands):
     answer = ''
-    int len_min = 0 # 영상 길이 : 분
-    int len_sec = 0 # 영상 길이 : 초
-    char order = ''
+    
+    # 까먹었던거 : https://woong-garden.tistory.com/entry/4-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%B3%80%EC%88%98-%EC%84%A0%EC%96%B8-%EC%88%AB%EC%9E%90%ED%98%95-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%9E%90%EB%A3%8C%ED%98%95
+    len_min = 0 # 영상 길이 : 분
+    len_sec = 0 # 영상 길이 : 초
+    order = ''
     
     if(order == "prev"):
         if(len_sec < 10):
