@@ -1,0 +1,15 @@
+def solution(video_len, pos, op_start, op_end, commands):
+    answer = ''
+    int len_min = 0 # 영상 길이 : 분
+    int len_sec = 0 # 영상 길이 : 초
+    char order = ''
+    
+    if(order == "prev"):
+        if(len_sec < 10):
+            len = 0
+    if(order == "next"):
+        
+    return answer
+
+def prev():
+    
